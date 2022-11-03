@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <h1> Recommend Attraction For Jeju Trip in November </h1><br>
+    
+
+    <form method="POST", action="{{url_for('predict')}}">
+        <b>
+            Category : <input type="text", name="category", placeholder="Please enter the category"> <br><br>
+            Subcategory : <input type="text", name="subcategory", placeholder="Please enter the subcategory"> <br><br>
+            Date : <input type="number", name="date", placeholder="Please enter the date"> <br><br>
+            avgTa : <input type="number", name="avgTa", placeholder="Please enter the average temperature"> <br><br>
+            sumRn : <input type="number", name="sumRn", placeholder="Please enter the sum of rainfall"> <br><br>
+            sumSsHr : <input type="number", name="sumSsHr", placeholder="Please enter the sum of insolation"> <br><br><br>
+        </b>
+        <input type="submit" , value='Recommend!'>
+    </form><br><br>
+    
+    <img src='static\jeju.jpg' alt="Scenery of Jeju">
+    
+    </center>
+</body>
+</html>
